@@ -1,0 +1,202 @@
+.delivery_page {
+  width: 100%;
+  background-color: #FF0000;
+  padding: 150px 0 80px;
+}
+
+.delivery_hero {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero_title {
+  font-size: 96px;
+  font-weight: 400;
+  color: #000000;
+  font-family: var(--font-bagel-fat-one);
+  margin-bottom: 30px;
+  letter-spacing: 0;
+  line-height: 110%;
+}
+
+.hero_subtitle {
+  font-size: 24px;
+  color: #000000;
+  font-family: var(--font-open-sans, 'Open Sans', sans-serif);
+  font-weight: 500;
+  line-height: 110%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.why_choose_section {
+  background-color: #501F20;
+  border-radius: 40px;
+  padding: 40px 50px 50px;
+  max-width: 1250px;
+  margin: 60px auto 0;
+}
+
+.why_choose_title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  font-family: var(--font-open-sans, 'Open Sans', sans-serif);
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.benefits_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefit_item {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #FFFFFF;
+  font-family: var(--font-open-sans, 'Open Sans', sans-serif);
+  font-weight: 400;
+  margin-bottom: 5px;
+  padding-left: 15px;
+  text-align: left;
+  position: relative;
+}
+
+.benefit_item::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: #fff;
+  left: 0;
+  top:11px;
+}
+
+.benefit_item:last-child {
+  margin-bottom: 0;
+}
+
+.benefit_item strong {
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1600px) {
+  .hero_title {
+    font-size: 80px;
+    margin-bottom: 25px;
+  }
+
+  .hero_subtitle {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .why_choose_section {
+    border-radius: 30px;
+    padding: 30px 35px 35px;
+    max-width: 1250px;
+    margin: 40px auto 0;
+}
+
+.why_choose_title {
+  font-size: 22px;
+}
+    
+}
+
+@media (max-width: 1200px) {
+.delivery_page{
+  width: 100%;
+  padding: 100px 0 60px;
+}
+
+.hero_title{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.hero_subtitle {
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.delivery_hero{
+    margin-bottom: 40px;
+}
+}
+
+@media (max-width: 768px) {
+  .delivery_page {
+    padding: 90px 0 50px;
+  }
+
+ 
+
+  .hero_title {
+    font-size: 42px;
+  }
+
+  .hero_subtitle {
+    font-size: 15px;
+    padding: 0px;
+  }
+
+  .why_choose_section {
+    margin: 30px 20px 0;
+    padding: 30px 25px;
+    border-radius: 20px;
+}
+
+  .why_choose_title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .benefit_item {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+  .why_choose_title {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+}
+
+@media (max-width: 480px) {
+
+
+  .hero_title {
+    font-size: 36px;
+  }
+
+  .hero_subtitle {
+    font-size: 15px;
+  }
+
+  .why_choose_section {
+    margin: 30px 0 0;
+    padding: 30px 20px;
+    border-radius: 15px;
+  }
+
+  .why_choose_title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .benefit_item {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+

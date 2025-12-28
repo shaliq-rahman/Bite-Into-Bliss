@@ -1,0 +1,142 @@
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+ 
+
+ 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  max-width: 100%;
+  background-color: #513D3E;
+  color: #171717;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+
+  font-family: var(--segoe-ui);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.responsiveImage {
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+p{
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.container{
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+
+
+
+
+#font_size {
+  font-size: 100%;
+}
+
+@media (min-resolution: 120dpi) {
+  #font_size {
+    font-size: 75%;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  #font_size {
+    font-size: 85%;
+  }
+
+  .container{
+      max-width: 90%;
+  }
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+  #font_size {
+    font-size: 70%;
+  }
+
+
+  #container_txt {
+    min-height: unset;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #font_size {
+    font-size: 60%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #font_size {
+    font-size: 70%;
+  }
+
+
+  .svg-container {
+    width: 118%;
+    left: -11%;
+    top: -7%;
+  }
+
+  .rtl .svg-container {
+    left: 7%;
+  }
+
+  /* .rtl  .svg-container{} */
+}

@@ -1,0 +1,158 @@
+@import "variable", "base";
+ .footer{
+  width: 100%;
+  padding: 45px 0;
+  background-color: #513D3E;
+ }
+
+ .footer_inner{
+      width: 100%;
+      border-radius: 47px;
+      background-color: #8A726E;
+      border: 4px solid #FFFFFF;
+      padding: 30px 50px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3%;
+      align-items: center;
+ }
+
+ .footer_logo_first{
+     width: 29%;
+     display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+     img{
+      width: 100%;
+      height: auto;
+     }
+ }
+
+ .footer_logo_second{
+  width: 36%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  img{
+   max-width: 100%;
+   height: auto;
+  }
+
+  a{
+       width: 100%;
+       display: block;
+       margin-top: 10px;
+       font-size: 24px;
+       color: #000;
+       text-align: center;
+       transition: all 0.3s ease;
+       &:hover{
+        color: #fff;
+       }
+  }
+}
+
+.footer_logo_third{
+  width: 29%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  img{
+    max-width: 100%;
+    height: auto;
+   }
+}
+
+
+@media (max-width: 1200px) {
+     .footer_logo_second a{
+          font-size: 20px;
+          margin-top: 0;
+     }
+
+     .footer_logo_first img,
+.footer_logo_second  img,
+.footer_logo_third img{
+       max-width: 200px;
+}
+}
+
+@media (max-width: 1000px) {
+     .footer_logo_second a{
+          font-size: 16px;
+     }
+     
+     .footer_logo_first img,
+.footer_logo_second  img,
+.footer_logo_third img{
+       max-width: 180px;
+}         
+
+
+}
+
+
+@media (max-width: 768px) {
+.footer_inner{
+     row-gap: 40px;
+}
+
+.footer_logo_first{
+      width: 100%;
+}
+
+.footer_logo_first img,
+.footer_logo_second  img,
+.footer_logo_third img{
+       max-width: 220px;
+}
+
+.footer_logo_second {
+     width: 100%;
+}
+
+.footer_logo_third{
+     width: 100%;
+}
+
+.footer_logo_second a{
+     font-size: 20px;
+     margin-top: 0;
+}
+
+.footer_inner {
+     width: 100%;
+     border-radius: 15px;
+     background-color: #8A726E;
+     border: 2px solid #FFFFFF;
+     padding: 25px 25px;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+ }
+
+
+}
+
+@media (max-width: 500px) {
+.footer {
+     width: 100%;
+     padding: 25px 0;
+}
+
+.footer_logo_first img,
+.footer_logo_second  img,
+.footer_logo_third img{
+       max-width: 150px;
+}
+
+.footer_inner{
+     row-gap: 30px;
+}
+
+.footer_logo_second a {
+     font-size: 16px;
+}
+
+}
