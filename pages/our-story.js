@@ -24,10 +24,57 @@ export default function OurStory() {
   return (
     <>
       <Head>
-        <title>Our Story - Toronto Cupcake</title>
-        <meta name="description" content="Learn about Toronto Cupcake - Founded in 2010, we are a leading destination for gourmet branded cupcakes" />
+        {/* Primary Meta Tags */}
+        <title>Our Story - Toronto Cupcake | Founded in 2010 | Gourmet Cupcakes Toronto</title>
+        <meta name="title" content="Our Story - Toronto Cupcake | Founded in 2010 | Gourmet Cupcakes Toronto" />
+        <meta name="description" content="Learn about Toronto Cupcake - Founded in 2010, we are Toronto's leading destination for gourmet branded cupcakes. Handcrafted cupcakes made fresh daily using the finest ingredients. Fast, reliable delivery across the GTA." />
+        <meta name="keywords" content="toronto cupcake story, toronto cupcake history, gourmet cupcakes toronto, cupcake bakery toronto, founded 2010, michelle toronto cupcake, toronto bakery, GTA cupcakes, custom cupcakes toronto" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://www.torontocupcake.com/our-story" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.torontocupcake.com/our-story" />
+        <meta property="og:title" content="Our Story - Toronto Cupcake | Founded in 2010" />
+        <meta property="og:description" content="Learn about Toronto Cupcake - Founded in 2010, we are Toronto's leading destination for gourmet branded cupcakes. Handcrafted cupcakes made fresh daily." />
+        <meta property="og:image" content="https://www.torontocupcake.com/images/story.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="Toronto Cupcake" />
+        <meta property="og:locale" content="en_CA" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://www.torontocupcake.com/our-story" />
+        <meta name="twitter:title" content="Our Story - Toronto Cupcake | Founded in 2010" />
+        <meta name="twitter:description" content="Learn about Toronto Cupcake - Founded in 2010, we are Toronto's leading destination for gourmet branded cupcakes." />
+        <meta name="twitter:image" content="https://www.torontocupcake.com/images/story.jpg" />
+        
+        {/* Structured Data - About Page */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "AboutPage",
+              "name": "Our Story - Toronto Cupcake",
+              "description": "Learn about Toronto Cupcake - Founded in 2010, we are Toronto's leading destination for gourmet branded cupcakes.",
+              "url": "https://www.torontocupcake.com/our-story",
+              "mainEntity": {
+                "@type": "Bakery",
+                "name": "Toronto Cupcake",
+                "foundingDate": "2010",
+                "description": "Toronto's leading destination for gourmet branded cupcakes. Handcrafted cupcakes made fresh daily using the finest ingredients.",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Toronto",
+                  "addressRegion": "ON",
+                  "addressCountry": "CA"
+                }
+              }
+            })
+          }}
+        />
       </Head>
 
       <div className={styles.our_story_page}>

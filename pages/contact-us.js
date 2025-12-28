@@ -42,10 +42,78 @@ export default function ContactUs() {
   return (
     <>
       <Head>
-        <title>Contact Us - Toronto Cupcake</title>
-        <meta name="description" content="Contact Toronto Cupcake - Get in touch with us for orders, inquiries, and more" />
+        {/* Primary Meta Tags */}
+        <title>Contact Us - Toronto Cupcake | Phone, Email & Hours | Order Cupcakes</title>
+        <meta name="title" content="Contact Us - Toronto Cupcake | Phone, Email & Hours" />
+        <meta name="description" content="Contact Toronto Cupcake for orders, inquiries, and custom cupcake requests. Call us at +1-877-334-9468 (North America) or +001-647-478-9464 (International). Open Monday-Saturday 7am-10pm, Sunday 7am-10pm." />
+        <meta name="keywords" content="contact toronto cupcake, toronto cupcake phone number, cupcake order toronto, custom cupcake order, toronto cupcake hours, GTA cupcake delivery, toronto bakery contact" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://www.torontocupcake.com/contact-us" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.torontocupcake.com/contact-us" />
+        <meta property="og:title" content="Contact Us - Toronto Cupcake | Phone, Email & Hours" />
+        <meta property="og:description" content="Contact Toronto Cupcake for orders, inquiries, and custom cupcake requests. Call us at +1-877-334-9468. Open Monday-Saturday 7am-10pm." />
+        <meta property="og:image" content="https://www.torontocupcake.com/images/banner-img.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="Toronto Cupcake" />
+        <meta property="og:locale" content="en_CA" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:url" content="https://www.torontocupcake.com/contact-us" />
+        <meta name="twitter:title" content="Contact Us - Toronto Cupcake | Phone, Email & Hours" />
+        <meta name="twitter:description" content="Contact Toronto Cupcake for orders, inquiries, and custom cupcake requests. Call us at +1-877-334-9468." />
+        <meta name="twitter:image" content="https://www.torontocupcake.com/images/banner-img.jpg" />
+        
+        {/* Contact Information */}
+        <meta name="contact" content="+1-877-334-9468" />
+        <meta name="format-detection" content="telephone=yes" />
+        
+        {/* Structured Data - Contact Page */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ContactPage",
+              "name": "Contact Us - Toronto Cupcake",
+              "description": "Contact Toronto Cupcake for orders, inquiries, and custom cupcake requests.",
+              "url": "https://www.torontocupcake.com/contact-us",
+              "mainEntity": {
+                "@type": "Bakery",
+                "name": "Toronto Cupcake",
+                "telephone": [
+                  "+1-877-334-9468",
+                  "+001-647-478-9464",
+                  "647-478-9464"
+                ],
+                "openingHoursSpecification": [
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                    "opens": "07:00",
+                    "closes": "22:00"
+                  },
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Sunday",
+                    "opens": "07:00",
+                    "closes": "22:00"
+                  }
+                ],
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Toronto",
+                  "addressRegion": "ON",
+                  "addressCountry": "CA"
+                }
+              }
+            })
+          }}
+        />
       </Head>
 
       <div className={styles.contact_page}>

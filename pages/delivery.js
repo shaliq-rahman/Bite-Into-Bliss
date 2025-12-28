@@ -22,10 +22,96 @@ export default function Delivery() {
   return (
     <>
       <Head>
-        <title>Delivery - Bite into Bliss</title>
-        <meta name="description" content="Delivery information for Bite into Bliss" />
+        {/* Primary Meta Tags */}
+        <title>Delivery - Toronto Cupcake | Fast Delivery Across Toronto & GTA</title>
+        <meta name="title" content="Delivery - Toronto Cupcake | Fast Delivery Across Toronto & GTA" />
+        <meta name="description" content="Toronto Cupcake offers swift and reliable cupcake delivery throughout Toronto and the Greater Toronto Area (GTA). Fast delivery, custom designs, and wide coverage including Hamilton, Mississauga, Vaughan, and Scarborough. Order fresh cupcakes delivered to your door." />
+        <meta name="keywords" content="cupcake delivery toronto, GTA cupcake delivery, toronto cupcake delivery, fast cupcake delivery, custom cupcake delivery, cupcake delivery mississauga, cupcake delivery hamilton, cupcake delivery scarborough, cupcake delivery vaughan, corporate cupcake delivery" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://www.torontocupcake.com/delivery" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.torontocupcake.com/delivery" />
+        <meta property="og:title" content="Delivery - Toronto Cupcake | Fast Delivery Across Toronto & GTA" />
+        <meta property="og:description" content="Toronto Cupcake offers swift and reliable cupcake delivery throughout Toronto and the Greater Toronto Area (GTA). Fast delivery, custom designs, and wide coverage." />
+        <meta property="og:image" content="https://www.torontocupcake.com/images/banner-img.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="Toronto Cupcake" />
+        <meta property="og:locale" content="en_CA" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://www.torontocupcake.com/delivery" />
+        <meta name="twitter:title" content="Delivery - Toronto Cupcake | Fast Delivery Across Toronto & GTA" />
+        <meta name="twitter:description" content="Toronto Cupcake offers swift and reliable cupcake delivery throughout Toronto and the Greater Toronto Area (GTA)." />
+        <meta name="twitter:image" content="https://www.torontocupcake.com/images/banner-img.jpg" />
+        
+        {/* Structured Data - Service */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "serviceType": "Cupcake Delivery",
+              "provider": {
+                "@type": "Bakery",
+                "name": "Toronto Cupcake",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Toronto",
+                  "addressRegion": "ON",
+                  "addressCountry": "CA"
+                }
+              },
+              "areaServed": [
+                {
+                  "@type": "City",
+                  "name": "Toronto"
+                },
+                {
+                  "@type": "City",
+                  "name": "Hamilton"
+                },
+                {
+                  "@type": "City",
+                  "name": "Mississauga"
+                },
+                {
+                  "@type": "City",
+                  "name": "Vaughan"
+                },
+                {
+                  "@type": "City",
+                  "name": "Scarborough"
+                }
+              ],
+              "description": "Swift and reliable cupcake delivery service throughout Toronto and the Greater Toronto Area (GTA). Fast delivery, custom designs, and wide coverage.",
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Cupcake Delivery Service",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Product",
+                      "name": "Fast Cupcake Delivery"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Product",
+                      "name": "Custom Cupcake Designs"
+                    }
+                  }
+                ]
+              }
+            })
+          }}
+        />
       </Head>
 
       <div className={styles.delivery_page}>
